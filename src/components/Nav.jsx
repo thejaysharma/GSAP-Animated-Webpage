@@ -30,7 +30,7 @@ export default function Nav() {
   const navbarPadding = scrolling ? "py-2" : "py-4";
   return (
     <div
-      className={`fixed px-12 w-full flex items-center justify-between font-medium z-50 transition-[padding_0.4s_ease] bg-white ${navbarPadding}`}
+      className={`fixed px-12 w-full flex items-center justify-between font-medium z-10 transition-[padding_0.4s_ease] bg-white ${navbarPadding}`}
     >
       <div className="logo">
         <Image
