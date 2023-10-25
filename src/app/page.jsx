@@ -2,7 +2,10 @@ import AheadApp from "@/components/AheadApp";
 import FamiliarCards from "@/components/FamiliarCards";
 import Landing from "@/components/Landing";
 import LandingInfo from "@/components/LandingInfo";
+import MyInfo from "@/components/MyInfo";
 import Nav from "@/components/Nav";
+import SelfImprovement from "@/components/SelfImprovement";
+import SocialSkillsRating from "@/components/SocialSkillsRating";
 
 export default function Home() {
   return (
@@ -13,6 +16,9 @@ export default function Home() {
         <LandingInfo />
         <FamiliarCards />
         <AheadApp />
+        <SelfImprovement />
+        <MyInfo />
+        <SocialSkillsRating />
       </div>
     </div>
   );

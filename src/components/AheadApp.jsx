@@ -34,7 +34,7 @@ export default function AheadApp() {
         scrollTrigger: {
           trigger: text1,
 
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
 
@@ -52,7 +52,7 @@ export default function AheadApp() {
         scrollTrigger: {
           trigger: text1,
 
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
 
@@ -67,7 +67,7 @@ export default function AheadApp() {
         scrollTrigger: {
           trigger: text1,
 
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
 
@@ -82,7 +82,7 @@ export default function AheadApp() {
         scrollTrigger: {
           trigger: text1,
 
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
 
@@ -98,7 +98,7 @@ export default function AheadApp() {
         scrollTrigger: {
           trigger: text1,
 
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
 
@@ -115,7 +115,7 @@ export default function AheadApp() {
         scrollTrigger: {
           trigger: text1,
 
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
 
@@ -131,7 +131,7 @@ export default function AheadApp() {
         scrollTrigger: {
           trigger: text1,
 
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
 
@@ -147,7 +147,7 @@ export default function AheadApp() {
         ease: "elastic.out(1, 0.5)",
         scrollTrigger: {
           trigger: text1,
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
           toggleActions: "restart complete reverse reset",
@@ -164,7 +164,7 @@ export default function AheadApp() {
         ease: "elastic.out(1, 0.8)",
         scrollTrigger: {
           trigger: text1,
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
           toggleActions: "play complete reverse reset",
@@ -180,7 +180,7 @@ export default function AheadApp() {
         ease: "elastic.out(1, 0.8)",
         scrollTrigger: {
           trigger: text1,
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
           toggleActions: "play complete reverse reset",
@@ -196,7 +196,7 @@ export default function AheadApp() {
         ease: "elastic.out(1, 0.8)",
         scrollTrigger: {
           trigger: text1,
-          markers: true,
+          // markers: true,
           start: "-30% center",
           end: "+=800",
           toggleActions: "play complete reverse reset",
