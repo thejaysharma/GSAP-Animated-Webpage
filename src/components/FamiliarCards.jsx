@@ -48,7 +48,7 @@ export default function FamiliarCards() {
       });
 
       gsap.to(sec, {
-        x: -1000,
+        scrollLeft: 1000,
         duration: 1,
         ease: "Power3.out",
         scrollTrigger: {
@@ -95,7 +95,7 @@ export default function FamiliarCards() {
         ref={(el) => {
           sec = el;
         }}
-        className="mt-9 flex h-[350px] gap-2  relative whitespace-nowrap overflow-x-auto z-10 scrollbar-hide"
+        className="mt-9 flex h-[350px] gap-2  relative whitespace-nowrap overflow-hidden z-10"
       >
         <div className=" translate-y-6 rounded-3xl inline-block gap-2  p-9 py-2 bg-[#D9F2FF] h-[250px] w-[400px]">
           <Image className="" width={60} height={100} src={EmojiHeart} />
@@ -121,7 +121,7 @@ export default function FamiliarCards() {
             </div>
           </div>
         </div>
-        <div className=" rounded-3xl -rotate-[6deg] relative z-50 translate-y-6 overflow-y-visible ml-12 inline-block gap-2  p-9 py-2 bg-[#6441EF] h-[260px] w-[320px]">
+        <div className="boxtoscroll rounded-3xl -rotate-[6deg] relative z-50 translate-y-6 overflow-y-visible ml-12 inline-block gap-2  p-9 py-2 bg-[#6441EF] h-[260px] w-[320px]">
           <Image className="" width={60} height={100} src={EmojiHeart} />
           <div className="flex flex-col gap-3">
             <h1 className="text-lg font-bold">You argue with a colleague</h1>

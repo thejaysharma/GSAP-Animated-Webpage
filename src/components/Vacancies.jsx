@@ -26,41 +26,9 @@ export default function Vacancies() {
       });
     });
 
-    // // changing of div height values
-    // const divElements = document.querySelectorAll(".box");
-    // const animations = Array.from(divElements).map((element) => {
-    //   const tl = gsap.timeline({ paused: true });
-    //   tl.to(element, { duration: 0.2, backgroundColor: "#feefd7" }).to(
-    //     element,
-    //     { duration: 0.2, height: 300 }
-    //   );
-
-    //   element.animation = tl;
-    //   return tl;
-    // });
-
-    // divElements.forEach((element) => {
-    //   element.addEventListener("mouseenter", () => {
-    //     element.animation.play();
-    //   });
-
-    //   element.addEventListener("mouseleave", () => {
-    //     element.animation.reverse();
-    //   });
-    // });
 
     return () => {
       ctx.revert();
-
-    //   divElements.forEach((element) => {
-    //     element.removeEventListener("mouseenter", () => {
-    //       element.animation.play();
-    //     });
-
-    //     element.removeEventListener("mouseleave", () => {
-    //       element.animation.reverse();
-    //     });
-    //   });
     };
   }, []);
 
