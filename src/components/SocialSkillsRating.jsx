@@ -34,6 +34,7 @@ export default function SocialSkillsRating() {
           // markers: true,
           start: "-30% center ",
           end: "+=800",
+          toggleActions: "play complete pause reverse",
         },
       });
       gsap.from(text2, {
@@ -46,6 +47,7 @@ export default function SocialSkillsRating() {
           // markers: true,
           start: "-30% center ",
           end: "+=800",
+          toggleActions: "play complete pause reverse",
         },
       });
 
@@ -59,6 +61,7 @@ export default function SocialSkillsRating() {
           // markers: true,
           start: "-30% center ",
           end: "+=800",
+          toggleActions: "play complete pause reverse",
         },
       });
       gsap.from(text3, {
@@ -76,7 +79,7 @@ export default function SocialSkillsRating() {
           start: "-30% center ",
           end: "+=800",
           // end:"bottom 50%",
-          toggleActions: "restart complete  ",
+          toggleActions: "play complete pause reverse",
           // Whatever other ScrollTrigger vars you need here
         },
       });
@@ -95,7 +98,7 @@ export default function SocialSkillsRating() {
           start: "-30% center ",
           end: "+=800",
           // end:"bottom 50%",
-          toggleActions: "restart complete  ",
+          toggleActions: "play complete pause reverse",
           // Whatever other ScrollTrigger vars you need here
         },
       });
@@ -110,7 +113,7 @@ export default function SocialSkillsRating() {
           start: "-30% center ",
           end: "+=800",
           // end:"bottom 50%",
-          toggleActions: "restart complete  ",
+          toggleActions: "play complete pause reverse",
           // Whatever other ScrollTrigger vars you need here
         },
       });
@@ -127,7 +130,7 @@ export default function SocialSkillsRating() {
           start: "-30% center ",
           end: "+=800",
           // end:"bottom 50%",
-          toggleActions: "restart complete  ",
+          toggleActions: "play complete pause reverse",
           // Whatever other ScrollTrigger vars you need here
         },
       });
@@ -142,7 +145,7 @@ export default function SocialSkillsRating() {
           // markers: true,
           start: "-30% center ",
           end: "+=800",
-          toggleActions: "restart  complete  ",
+          toggleActions: "play complete pause reverse",
         },
       });
       gsap.from(assignmen1, {
@@ -156,7 +159,7 @@ export default function SocialSkillsRating() {
           // markers: true,
           start: "-30% center ",
           end: "+=800",
-          toggleActions: "restart  complete  ",
+          toggleActions: "play complete none reset",
         },
       });
       gsap.from(assignmen2, {
@@ -170,7 +173,7 @@ export default function SocialSkillsRating() {
           // markers: true,
           start: "-30% center ",
           end: "+=800",
-          toggleActions: "restart  complete  ",
+          toggleActions: "play complete none reset",
         },
       });
       gsap.from(assignmen3, {
@@ -184,7 +187,7 @@ export default function SocialSkillsRating() {
           // markers: true,
           start: "-30% center ",
           end: "+=800",
-          toggleActions: "restart  complete  ",
+          toggleActions: "play complete none reset",
         },
       });
       gsap.from(assignmen4, {
@@ -198,7 +201,7 @@ export default function SocialSkillsRating() {
           // markers: true,
           start: "-30% center ",
           end: "+=800",
-          toggleActions: "restart  complete  ",
+          toggleActions: "play complete none reset",
         },
       });
     });
@@ -209,7 +212,7 @@ export default function SocialSkillsRating() {
   }, []);
 
   return (
-    <div className="bg-[#EEF8FE] rounded-3xl h-[750px] p-12 mt-96 flex flex-col  items-center">
+    <div className="bg-[#EEF8FE] rounded-3xl h-[750px] p-12 mt-28 flex flex-col  items-center">
       <p
         ref={(el) => {
           text1 = el;

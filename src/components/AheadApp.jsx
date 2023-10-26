@@ -38,7 +38,7 @@ export default function AheadApp() {
           start: "-30% center",
           end: "+=800",
 
-          toggleActions: "restart complete reverse reset",
+          toggleActions: "play complete pause reverse",
           // Whatever other ScrollTrigger vars you need here
         },
       });
@@ -56,7 +56,7 @@ export default function AheadApp() {
           start: "-30% center",
           end: "+=800",
 
-          toggleActions: "restart complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
       gsap.from(orangecircle, {
@@ -71,7 +71,7 @@ export default function AheadApp() {
           start: "-30% center",
           end: "+=800",
 
-          toggleActions: "restart complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
       gsap.from(smallcircle, {
@@ -86,7 +86,7 @@ export default function AheadApp() {
           start: "-30% center",
           end: "+=800",
 
-          toggleActions: "restart complete reverse reset",
+          toggleActions: "play complete pause reverse",
           // Whatever other ScrollTrigger vars you need here
         },
       });
@@ -102,7 +102,7 @@ export default function AheadApp() {
           start: "-30% center",
           end: "+=800",
 
-          toggleActions: "restart complete reverse reset",
+          toggleActions: "play complete pause reverse",
           // Whatever other ScrollTrigger vars you need here
         },
       });
@@ -119,7 +119,7 @@ export default function AheadApp() {
           start: "-30% center",
           end: "+=800",
 
-          toggleActions: "restart complete reverse reset",
+          toggleActions: "play complete pause reverse",
           // Whatever other ScrollTrigger vars you need here
         },
       });
@@ -135,7 +135,7 @@ export default function AheadApp() {
           start: "-30% center",
           end: "+=800",
 
-          toggleActions: "restart complete reverse reset",
+          toggleActions: "play complete pause reverse",
           // Whatever other ScrollTrigger vars you need here
         },
       });
@@ -150,7 +150,7 @@ export default function AheadApp() {
           // markers: true,
           start: "-30% center",
           end: "+=800",
-          toggleActions: "restart complete reverse reset",
+          toggleActions: "play complete pause reverse",
           // Whatever other ScrollTrigger vars you need here
         },
       });
@@ -167,7 +167,7 @@ export default function AheadApp() {
           // markers: true,
           start: "-30% center",
           end: "+=800",
-          toggleActions: "play complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
 
@@ -183,7 +183,7 @@ export default function AheadApp() {
           // markers: true,
           start: "-30% center",
           end: "+=800",
-          toggleActions: "play complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
 
@@ -199,7 +199,7 @@ export default function AheadApp() {
           // markers: true,
           start: "-30% center",
           end: "+=800",
-          toggleActions: "play complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
     });

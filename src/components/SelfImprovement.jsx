@@ -30,9 +30,9 @@ export default function SelfImprovement() {
         scrollTrigger: {
           trigger: text1,
           // markers: true,
-          start: "-30% center",
+          start: "-50% center",
           end: "+=800",
-          toggleActions: "play complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
       gsap.from(text2, {
@@ -47,7 +47,7 @@ export default function SelfImprovement() {
           // markers: true,
           start: "-30% center",
           end: "+=800",
-          toggleActions: "play complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
 
@@ -61,7 +61,7 @@ export default function SelfImprovement() {
           trigger: text1,
           start: "-30% center",
           end: "+=800",
-          toggleActions: "play complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
     });

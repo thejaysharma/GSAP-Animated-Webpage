@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import AheadApp from "@/components/AheadApp";
 import FamiliarCards from "@/components/FamiliarCards";
 import Landing from "@/components/Landing";
@@ -6,6 +7,7 @@ import MyInfo from "@/components/MyInfo";
 import Nav from "@/components/Nav";
 import SelfImprovement from "@/components/SelfImprovement";
 import SocialSkillsRating from "@/components/SocialSkillsRating";
+import Test from "@/components/Test";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <SelfImprovement />
         <MyInfo />
         <SocialSkillsRating />
+        <Test />
+        <About />
       </div>
     </div>
   );

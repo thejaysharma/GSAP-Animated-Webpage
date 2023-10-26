@@ -28,7 +28,7 @@ export default function FamiliarCards() {
           // markers: true,
           start: "-30% center",
           end: "+=800",
-          toggleActions: "play complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
 
@@ -43,7 +43,7 @@ export default function FamiliarCards() {
           start: "-30% center",
           end: "+=800",
           // markers: true,
-          toggleActions: "play complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
 
@@ -56,7 +56,7 @@ export default function FamiliarCards() {
           start: "-30% center",
           end: "+=800",
           // markers: true,
-          toggleActions: "play complete reverse reset",
+          toggleActions: "play complete pause reverse",
         },
       });
     });
