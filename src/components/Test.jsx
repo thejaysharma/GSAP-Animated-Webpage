@@ -65,7 +65,7 @@ export default function Test() {
   }, []);
 
   return (
-    <div className="text-center mt-40">
+    <div className="text-center pt-40" id="SelfAwarenessTest">
       <div
         ref={(el) => {
           text1 = el;

@@ -42,10 +42,10 @@ export default function Nav() {
         />
       </div>
       <div className="links flex gap-8">
-        <Link href="/">Emotions</Link>
-        <Link href="/">Manifesto</Link>
-        <Link href="/">Self-awareness test</Link>
-        <Link href="/">Work With Us</Link>
+        <Link href="#Emotions">Emotions</Link>
+        <Link href="#Manifesto">Manifesto</Link>
+        <Link href="#SelfAwarenessTest">Self-awareness test</Link>
+        <Link href="#WorkWithUs">Work With Us</Link>
       </div>
       <div>
         <button className=" bg-black text-white p-4 rounded-full">

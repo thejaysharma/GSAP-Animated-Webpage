@@ -67,27 +67,30 @@ export default function FamiliarCards() {
 
   return (
     <div
-      className=" relative mlt mt-36 z-0"
+      className=" relative mlt pt-36 z-0"
+      id="Emotions"
       ref={(el) => {
         container = el;
       }}
     >
-      <h1
-        ref={(el) => {
-          text = el;
-        }}
-        className="text-4xl font-bold"
-      >
-        Does this sound familiar...
-      </h1>
-      <Image
-        src={OrangeCutie}
-        ref={(el) => {
-          orange = el;
-        }}
-        width={100}
-        className="absolute -top-[4rem] -rotate-[30deg] left-[29.5rem]"
-      />
+      <div className="flex gap-10">
+        <h1
+          ref={(el) => {
+            text = el;
+          }}
+          className="text-4xl font-bold"
+        >
+          Does this sound familiar...
+        </h1>
+        <Image
+          src={OrangeCutie}
+          ref={(el) => {
+            orange = el;
+          }}
+          width={100}
+          className=" relative -top-10 -rotate-[30deg]"
+        />
+      </div>
       <div
         ref={(el) => {
           sec = el;

@@ -210,12 +210,12 @@ export default function AheadApp() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative pt-12" id="Manifesto">
       <Image
         ref={(el) => {
           flower = el;
         }}
-        className="absolute right-20 -top-8 z-20"
+        className="absolute right-20 top-14 z-20"
         src={Flower}
         width={80}
       />

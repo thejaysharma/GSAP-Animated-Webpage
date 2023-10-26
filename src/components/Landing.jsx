@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useLayoutEffect } from "react";
 import Image from "next/image";
 import { gsap, Linear, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -29,93 +29,95 @@ export default function Landing() {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
-    gsap.from(text, {
-      duration: 1,
-      opacity: 0,
-      x: -100,
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(text, {
+        duration: 1,
+        opacity: 0,
+        x: -100,
+      });
+
+      gsap.from(leaf1, {
+        rotate: 360,
+        duration: 3,
+        repeat: -1,
+      });
+      gsap.from(circle1, {
+        rotation: 3000,
+        duration: 3,
+        repeat: -1,
+      });
+
+      gsap.to(leaf2, {
+        duration: 1,
+        // ease: "power3.inOut",
+        rotate: 360,
+        repeat: -1,
+        // scrollTrigger: ".trigger"
+      });
+
+      gsap.from(circle2, {
+        scale: 0,
+        opacity: 0,
+        duration: 3.2,
+        repeat: -1,
+        ease: "elastic.out(1.2, 0.3)",
+      });
+      gsap.from(banner, {
+        scale: 0,
+        rotate: 100,
+        duration: 4.2,
+        repeat: -1,
+        ease: "elastic.out(1.2, 0.3)",
+      });
     });
 
-    gsap.from(leaf1, {
-      rotation: 3000,
-      duration: 3,
-      repeat: -1,
-    });
-    gsap.from(circle1, {
-      rotation: 3000,
-      duration: 3,
-      repeat: -1,
-    });
-
-    gsap.to(leaf2, {
-      duration: 1,
-      // ease: "power3.inOut",
-      rotation: 1410,
-      x: 20,
-      y: 60,
-      repeat: -1,
-      // scrollTrigger: ".trigger"
-    });
-
-    gsap.from(circle2, {
-      scale: 0,
-      opacity: 0,
-      rotate: 100,
-      duration: 3.2,
-      ease: "elastic.out(1.2, 0.3)",
-    });
-    gsap.from(banner, {
-      scale: 0,
-      rotate: 100,
-      duration: 4.2,
-      ease: "elastic.out(1.2, 0.3)",
-    });
+    return () => {
+      ctx.revert();
+    };
   }, []);
 
   return (
     <div
-      // ref={(el) => (div = el)}
+      ref={(el) => (div = el)}
       className="bg-[#EFECFF] mlt overflow-hidden p-12 relative mt-5 h-[700px] flex items-center  justify-around gap-10 rounded-3xl"
     >
       {/* Ahead Section */}
       <Image
-        // ref={(el) => (leaf1 = el)}
+        ref={(el) => (leaf1 = el)}
         className="absolute top-[6rem] left-1/2 rotate-[35deg] "
         width={80}
         src={Leaf}
       />
       <Image
-        // ref={(el) => (leaf2 = el)}
+        ref={(el) => (leaf2 = el)}
         className="absolute -top-[4rem] left-[4.5rem] -rotate-[25deg] "
         width={250}
         src={Leaf}
       />
       <Image
-        // ref={(el) => (circle1 = el)}
+        ref={(el) => (circle1 = el)}
         className="absolute top-[10rem] left-[47%]  "
         width={70}
         src={OrangeCircle}
       />
       <Image
-        // ref={(el) => (circle2 = el)}
+        ref={(el) => (circle2 = el)}
         className="absolute top-[3rem] left-[54%]  "
         width={30}
         src={OrangeFilledCircle}
       />
       <Image
-        // ref={(el) => (circle2 = el)}
         className="absolute -top-[2%] right-[25%]  "
         width={50}
         src={OrangeFilledCircle}
       />
       <Image
-        // ref={(el) => (circle2 = el)}
         className="absolute top-[60%] -left-[1.5%]  "
         width={50}
         src={OrangeFilledCircle}
       />
       <Image
-        // ref={(el) => (circle2 = el)}
         className="absolute -bottom-[3%] left-[33%] "
         width={50}
         src={RedCircle}
@@ -123,7 +125,7 @@ export default function Landing() {
       <div className="flex gap-5 flex-col ">
         <p className="text-xl">Ahead app</p>
         <h1
-          // ref={(el) => (text = el)}
+          ref={(el) => (text = el)}
           className="text-6xl leading-[60px]  font-bold"
         >
           Master Your Life <br /> by mastering <br />
@@ -179,9 +181,9 @@ export default function Landing() {
         />
         <div className="h-[250px] bg-[#DDD6F8] rounded-full w-[250px] relative   flex justify-center items-center">
           <Image
-            // ref={(el) => {
-            //   banner = el;
-            // }}
+            ref={(el) => {
+              banner = el;
+            }}
             src={MobileSurr}
             className="absolute -left-16"
             height={50}

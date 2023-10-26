@@ -66,7 +66,10 @@ export default function About() {
   }, []);
 
   return (
-    <div className="h-[800px] p-8 flex rounded-3xl mt-56 bg-[#F3F1FF]">
+    <div
+      className="h-[800px] p-8 flex rounded-3xl mt-56 bg-[#F3F1FF]"
+      id="WorkWithUs"
+    >
       <div className="w-[50%] -ml-5  p-11 ">
         <h1
           ref={(el) => {
