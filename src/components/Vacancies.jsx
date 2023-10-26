@@ -75,7 +75,7 @@ export default function Vacancies() {
         Open Vacancies
       </p>
       <div className="mt-12 justify-between gap-10 flex">
-        <div className="bg-[rgb(254,251,236)] box overflow-hidden p-7 w-[400px] h-[220px] hover:h-[300px] hover:bg-[#feefd7] transition-all duration-300 rounded-3xl">
+        <div className="bg-[rgb(254,251,236)] box overflow-hidden p-7 w-[400px] h-[220px] hover:h-[350px] hover:bg-[#feefd7] transition-all duration-300 rounded-3xl">
           <h1 className="text-xl font-bold">Senior Full-Stack Engineer</h1>
           <div className="flex mt-5 gap-4 items-center">
             <div className="bg-black h-[10px] w-[10px] rounded-full"></div>
@@ -95,7 +95,7 @@ export default function Vacancies() {
             Start a test
           </button>
         </div>
-        <div className="bg-[rgb(254,251,236)] p-7 w-[400px] h-[220px] hover:h-[300px] hover:bg-[#feefd7] transition-all duration-300 overflow-hidden box rounded-3xl">
+        <div className="bg-[rgb(254,251,236)] p-7 w-[400px] h-[220px] hover:h-[350px] hover:bg-[#feefd7] transition-all duration-300 overflow-hidden box rounded-3xl">
           <h1 className="text-xl font-bold">Senior Designer</h1>
           <div className="flex mt-5 gap-4 items-center">
             <div className="bg-black h-[10px] w-[10px] rounded-full"></div>
@@ -115,7 +115,7 @@ export default function Vacancies() {
             Start a test
           </button>
         </div>
-        <div className="bg-[rgb(254,251,236)] p-7 w-[400px] h-[220px] hover:h-[300px] hover:bg-[#feefd7] transition-all duration-300 overflow-hidden box rounded-3xl">
+        <div className="bg-[rgb(254,251,236)] p-7 w-[400px] h-[220px] hover:h-[350px] hover:bg-[#feefd7] transition-all duration-300 overflow-hidden box rounded-3xl">
           <h1 className="text-xl font-bold">Superstar Intern</h1>
           <div className="flex mt-5 gap-4 items-center">
             <div className="bg-black h-[10px] w-[10px] rounded-full"></div>
